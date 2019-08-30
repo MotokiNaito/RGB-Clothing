@@ -3,9 +3,14 @@ import styled from "styled-components";
 export const MenuItemContainer = styled.div`
   position: relative;
   width: 48%;
-  margin: 0 7.5px 15px;
+  margin: 0 7.5px 10px;
+
+  &:nth-child(3) {
+    margin-top: 160px;
+  }
 
   &:last-child {
+    margin-top: 100px;
     width: 100%;
   }
 
@@ -51,8 +56,8 @@ export const ContentContainer = styled.div`
 export const ContentTitle = styled.span`
   font-weight: bold;
   margin-bottom: 6px;
-  font-size: 40px;
-  color: #4a4a4a;
+  font-size: 32px;
+  letter-spacing: 2px;
 `;
 
 export const ContentSubtitle = styled.span`

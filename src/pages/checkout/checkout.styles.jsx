@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const CheckoutPageContainer = styled.div`
   width: 55%;
@@ -6,7 +6,7 @@ export const CheckoutPageContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 50px auto 0;
+  margin: 100px auto;
 
   button {
     margin-left: auto;
