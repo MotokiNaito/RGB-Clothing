@@ -4,10 +4,10 @@ E-commerce App using React, Redux and Firebase.
 ## Skills I Used
 
 1. React/Redux
-2, Reselect
+2. Reselect
 3. Firebase
-4, Stripe
-5, Styled Components
+4. Stripe
+5. Styled Components
 
 ## Getting Started
 
