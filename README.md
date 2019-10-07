@@ -1,68 +1,44 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# About
 
-## Available Scripts
+![logo](/src/assets/logo.png)
 
-In the project directory, you can run:
+This is E-commerce App.<br>
+(https://rgb-clothing.herokuapp.com/)
 
-### `npm start`
+# Skills I used
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![logo](/src/assets/skills.png)
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+- React
+- Redux
+- React Router
+- Reselect
+- Styled Components
+- Stripe
 
-### `npm test`
+# Why did I use Reselect?
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Simple “selector” library for Redux.
 
-### `npm run build`
+1. Selectors can compute derived data, allowing Redux to store the minimal possible state.
+2. Selectors are efficient. A selector is not recomputed unless one of its arguments changes.
+3. Selectors are composable. They can be used as input to other selectors.
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Why React?
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+**1. Virtual DOM & Performance**<br>
+A virtual DOM object is a representation of a DOM object, It creates a virtual copy of the original DOM. It's a one-way data binding hence whenever any modifications happen in the web application, the entire UI is re-rendered in virtual DOM representation. Then it checks the difference between the previous DOM representation and new DOM. Once it has done, the real DOM will update only the things that have actually changed. This makes the application faster, and there is no wastage of memory.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**2. JSX**<br>
+JSX stands for JavaScript XML. JSX makes writing React components, the building blocks of React UI,easier by making the syntax developers use for generating these strings of HTML almost identical to the HTML they will inject into the web page.JSX is one of best ReactJS features. Web developers will always go for an easy way out, which is why this is a great choice for many.
 
-### `npm run eject`
+**3. Component-Based**<br>
+In React everything is component the web page divided into small components to create a view. Every part of applications visuals would be wrapped inside a self-contained module known as a component. Since component logic is written in JavaScript instead of templates, you can easily pass data through your app and keep the state out of the DOM.Components in ReactJS use to define the visuals and interactions in applications.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Upcoming Features
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Converting components to Typescript
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+2. Implementing Search form
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+3. Adding fancy animation with Greensock
