@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Link } from "react-router-dom";
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const HeaderContainer = styled.div`
   height: 70px;
@@ -11,8 +11,10 @@ export const HeaderContainer = styled.div`
 `;
 
 export const LogoContainer = styled(Link)`
-  font-size: 60px;
+  font-size: 40px;
+  letter-spacing: -1px;
   line-height: 1;
+  margin-top: 10px;
 `;
 
 export const OptionsContainer = styled.div`

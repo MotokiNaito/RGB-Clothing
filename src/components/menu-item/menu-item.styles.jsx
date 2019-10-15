@@ -1,18 +1,9 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const MenuItemContainer = styled.div`
   position: relative;
-  width: 48%;
-  margin: 0 7.5px 10px;
-
-  &:nth-child(3) {
-    margin-top: 160px;
-  }
-
-  &:last-child {
-    margin-top: 100px;
-    width: 100%;
-  }
+  width: 18%;
+  margin: 0 1% 10px;
 
   &:hover {
     cursor: pointer;
@@ -30,7 +21,7 @@ export const MenuItemContainer = styled.div`
 
 export const BackgroundImageContainer = styled.div`
   width: 100%;
-  height: ${({ size }) => (size ? "620px" : "460px")};
+  height: 400px;
   position: relative;
   overflow: hidden;
 `;
@@ -56,11 +47,6 @@ export const ContentContainer = styled.div`
 export const ContentTitle = styled.span`
   font-weight: bold;
   margin-bottom: 6px;
-  font-size: 32px;
+  font-size: 20px;
   letter-spacing: 2px;
-`;
-
-export const ContentSubtitle = styled.span`
-  font-weight: lighter;
-  font-size: 24px;
 `;
