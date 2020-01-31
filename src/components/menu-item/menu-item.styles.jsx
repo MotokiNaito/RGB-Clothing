@@ -1,9 +1,14 @@
 import styled from 'styled-components';
 
+import { device } from '../../device';
+
 export const MenuItemContainer = styled.div`
   position: relative;
   width: 18%;
   margin: 0 1% 10px;
+  @media ${device.laptop} {
+    width: 48%;
+  }
 
   &:hover {
     cursor: pointer;
@@ -24,6 +29,9 @@ export const BackgroundImageContainer = styled.div`
   height: 400px;
   position: relative;
   overflow: hidden;
+  @media ${device.laptop} {
+    height: 300px;
+  }
 `;
 
 export const BackgroundImageInner = styled.div`

@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
+import { device } from '../../device';
+
 export const HomePageContainer = styled.div`
   margin: 0 auto;
   max-width: 1400px;
@@ -8,6 +10,9 @@ export const HomePageContainer = styled.div`
   align-items: center;
   h2 {
     margin-left: 1%;
+    @media ${device.laptop} {
+      margin-left: 5%;
+    }
   }
 `;
 
@@ -19,6 +24,9 @@ export const MainImageContainer = styled.div`
     width: 60%;
     max-width: 100%;
     height: auto;
+    @media ${device.tablet} {
+      width: 80%;
+    }
   }
 `;
 
@@ -28,6 +36,9 @@ export const MainTextContainer = styled.div`
   right: 5%;
   h1 {
     font-size: 150px;
+    @media ${device.tablet} {
+      font-size: 60px;
+    }
   }
 `;
 
@@ -45,4 +56,9 @@ export const IntroText = styled.div`
   margin: 140px auto 100px;
   font-size: 32px;
   text-align: center;
+  @media ${device.tablet} {
+    font-size: 24px;
+    width: 80%;
+    margin: 60px auto 30px;
+  }
 `;
