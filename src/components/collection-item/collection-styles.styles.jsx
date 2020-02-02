@@ -1,5 +1,6 @@
-import styled from "styled-components";
-import CustomButton from "../custom-button/custom-button";
+import styled from 'styled-components';
+import CustomButton from '../custom-button/custom-button';
+import { device } from '../../device';
 
 export const CollectionItemContainer = styled.div`
   width: 22vw;
@@ -8,6 +9,9 @@ export const CollectionItemContainer = styled.div`
   height: 350px;
   align-items: center;
   position: relative;
+  @media ${device.laptop} {
+    width: 45vw;
+  }
 
   &:hover {
     .image {

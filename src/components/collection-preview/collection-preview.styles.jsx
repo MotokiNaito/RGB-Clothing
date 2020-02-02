@@ -19,4 +19,5 @@ export const TitleContainer = styled.h1`
 export const PreviewContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 `;
