@@ -10,7 +10,8 @@ export const CollectionItemContainer = styled.div`
   align-items: center;
   position: relative;
   @media ${device.laptop} {
-    width: 45vw;
+    width: 48%;
+    margin-bottom: 2rem;
   }
 
   &:hover {

@@ -1,4 +1,5 @@
-import styled from "styled-components";
+import styled from 'styled-components';
+import { device } from '../../device';
 
 export const CollectionPageContainer = styled.div`
   width: 90%;
@@ -17,7 +18,14 @@ export const CollectionItemsContainer = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 10px;
 
+  @media ${device.laptop} {
+    grid-template-columns: 2fr 2fr;
+  }
+
   & > div {
     margin-bottom: 30px;
+    @media ${device.laptop} {
+      width: 100%;
+    }
   }
 `;

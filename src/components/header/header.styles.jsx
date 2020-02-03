@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { device } from '../../device';
 
 export const HeaderContainer = styled.div`
   height: 70px;
@@ -15,6 +16,10 @@ export const LogoContainer = styled(Link)`
   letter-spacing: -1px;
   line-height: 1;
   margin-top: 10px;
+  @media ${device.laptop} {
+    font-size: 28px;
+    margin-top: 20px;
+  }
 `;
 
 export const OptionsContainer = styled.div`
